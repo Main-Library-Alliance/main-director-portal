@@ -1,0 +1,10 @@
+# surveys folder
+network-surveys
+
+# images
+.png
+.svg
+
+*.log
+!spec/*.log
+error_log
