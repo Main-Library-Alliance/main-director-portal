@@ -7,6 +7,7 @@ $username = $_SESSION["username"];
 // this only allows maintech view the page
 if ($username !== "maintech") {
     header("Location: /login/");
+    exit;
 }
 
 
