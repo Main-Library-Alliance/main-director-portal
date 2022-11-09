@@ -12,3 +12,6 @@ error_log
 
 #Listing files
 .listing
+
+#ftp download directory
+ftp.mainlib.org

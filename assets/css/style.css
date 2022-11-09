@@ -1,5 +1,5 @@
 :root {
-    --mainblue:#10669f;
+    --mainblue:#1a294a;
     --lightacc:#EFEFF0;
     --mainorange:#E08941;
     --lightblue:#baedfd;
@@ -20,6 +20,8 @@ body a {
     font-weight:bold;
     color:var(--mainblue);
     text-decoration:none;
+    width:100%;
+    max-width:300px;
 }
 .container {
     max-width:900px;
@@ -68,7 +70,7 @@ details > .info {
 
 .sidebar, .right-sidebar {
     background-color:var(--mainblue);
-    border-top-right-radius:20px;
+    border-top-right-radius:0px;
     position:relative;
     width:300px;
     min-width:300px;
@@ -205,7 +207,7 @@ table {
     width:100%;
 }
 .logo {
-    max-width:150px;
+    max-width:300px;
 }
 section {
     padding-top:20px;

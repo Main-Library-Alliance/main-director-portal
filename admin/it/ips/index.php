@@ -21,7 +21,7 @@ include "../../../adminOnly.php";
                 <?php include "../../../portal/sidebar.php"; ?>
                     <main>
                         <h1>IP Addresses</h1>
-                        <form action="export.php" method="post">
+                         <form action="export.php" method="post">
                         
                         <input type="submit" class="btn" value="Export">
                         </form>
