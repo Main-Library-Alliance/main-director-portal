@@ -8,3 +8,7 @@ network-surveys
 *.log
 !spec/*.log
 error_log
+
+
+#Listing files
+.listing
