@@ -18,4 +18,4 @@ jobs:
         server: ftp.mainlib.org
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: public_html/library-data-TEST
+        server-dir: public_html/library-data-TEST/
