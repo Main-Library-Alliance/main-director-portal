@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost"; /* Host name */
-$user = "root"; /* User */
-$password = ""; /* Password */
-$dbname = "mainlib_libraryinfo"; /* Database name */
+$host = "${DB_HOSTNAME}";
+$user = "${DB_USERNAME}"; 
+$password = "${DB_PASSWORD}";
+$dbname = "${DB_NAME}";
 
 $con = mysqli_connect($host, $user, $password, $dbname);
 // Check connection
