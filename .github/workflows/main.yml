@@ -1,4 +1,4 @@
-name: 🚀 Deploy website on push
+name: Deploy development branch to demo site
 on: 
   push:
     branches:
@@ -7,7 +7,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    environment: "mainlib webserver"
+    environment: "mainlib demo webserver"
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
@@ -18,4 +18,4 @@ jobs:
         server: ftp.mainlib.org
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: public_html/library-data-TEST/
+        server-dir: ${{ secrets.ftp_directory }}
