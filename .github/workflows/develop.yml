@@ -1,17 +1,16 @@
-name: Deploy live branch to site
+name: Deploy development branch to site
 on: 
   push:
     branches:
-      - live
+      - development
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: Deploy via FTP
     runs-on: ubuntu-latest
-    environment: "mainlib webserver"
+    environment: "mainlib demo webserver"
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-
     - name: Generate config file
       run: ./generate_config.sh
       env:
@@ -19,7 +18,6 @@ jobs:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_HOSTNAME: ${{ secrets.DB_HOSTNAME }}
           DB_NAME:     ${{ secrets.DB_NAME }}
-
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
