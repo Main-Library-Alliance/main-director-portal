@@ -1,4 +1,4 @@
-name: Deploy development branch to demo site
+name: Deploy live branch to site
 on: 
   push:
     branches:
@@ -7,7 +7,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    environment: "mainlib demo webserver"
+    environment: "mainlib webserver"
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
