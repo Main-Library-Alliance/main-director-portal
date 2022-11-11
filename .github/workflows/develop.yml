@@ -18,6 +18,8 @@ jobs:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           DB_HOSTNAME: ${{ secrets.DB_PASSWORD }}
           DB_NAME:     ${{ secrets.DB_NAME }}
+    - name: print config
+      run: cat config.php
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
