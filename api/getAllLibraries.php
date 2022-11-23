@@ -11,7 +11,7 @@ try {
     }
     $dbh=null;
 } catch (PDOException $e) {
-    print ("Error!: " . $e->getMessage() . "<br/>";
+    print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
 
