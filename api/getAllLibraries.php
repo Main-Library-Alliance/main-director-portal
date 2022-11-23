@@ -6,7 +6,7 @@ try {
     $dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
 
     //Query DB
-    foreach($dbh->query('SELECT * FROM libraries' as $row)) {
+    foreach($dbh->query('SELECT * FROM libraries') as $row) {
         print_r($row);
     }
     $dbh=null;
