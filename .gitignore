@@ -15,3 +15,6 @@ error_log
 
 #ftp download directory
 ftp.mainlib.org
+
+utilities/data/
+utilities/importer/
