@@ -27,3 +27,9 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/library-data/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/google-api-php-client/**
+
