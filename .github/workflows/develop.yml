@@ -25,7 +25,7 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/library-data-TEST/
-        exclude:|
+        exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
