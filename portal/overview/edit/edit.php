@@ -49,6 +49,7 @@ if (isset($_POST['libraries'])) {
         $ip1 = $row['ip_addr_1'];
         $ip2 = $row['ip_addr_2'];
         $drive = $row['google_drive'];
+        $client_pcs = $row['client_pcs'];
         $env = $row['envisionware'];
         $pcres = $row['env_pc_res'];
         $lpt = $row['env_lpt_print'];
@@ -168,6 +169,10 @@ if (isset($_POST['libraries'])) {
                 </select>";
                 }?></td>
             </tr>
+            <tr>
+               <td class="label">Client PCs</td>
+               <td><input type='text' name='client_pcs' value='<?php echo $client_pcs; ?>'></td>
+           </tr>
             <tr>
                 <td class="label">----PC Reservation</td>
                 <td><?php 
