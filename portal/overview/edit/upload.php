@@ -89,6 +89,7 @@ if (isset($_POST['saveEdit'])) {
         $tc2email = $_POST['tc2email'];
         $email = $_POST['email'];
         $drive = $_POST['drive'];
+        $client_pcs = $_POST['client_pcs'];
         $env = $_POST['env'];
         $pcr = $_POST['pcr'];
         $lpt = $_POST['lpt'];
@@ -124,8 +125,8 @@ if (isset($_POST['saveEdit'])) {
       	
       	
       	// envisionware query
-      	$stmt = $con->prepare("UPDATE envisionware SET envisionware = ?, env_pc_res = ?, env_lpt_print = ?, env_aam = ?, env_mobile_print = ?, bw_email = ?, color_email = ?, web_portal = ? WHERE library_id = ?");
-      	$stmt->bind_param("sssssssss", $env, $pcr, $lpt, $aam, $mps, $bwemail, $coloremail, $webportal, $id);
+      	$stmt = $con->prepare("UPDATE envisionware SET envisionware = ?, client_pcs = ?, env_pc_res = ?, env_lpt_print = ?, env_aam = ?, env_mobile_print = ?, bw_email = ?, color_email = ?, web_portal = ? WHERE library_id = ?");
+      	$stmt->bind_param("sssssssss", $env, $client_pcs, $pcr, $lpt, $aam, $mps, $bwemail, $coloremail, $webportal, $id);
       	$stmt->execute();
       	$stmt->close();
       	
