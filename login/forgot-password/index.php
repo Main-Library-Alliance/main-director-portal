@@ -16,7 +16,7 @@
                 <main>
                 <form method="POST" action="forgot.php" name="reset">
                         <h1>Forgot Password</h1>
-                        <p>This will seend a reset email to the <strong>dir-xxx@mainlib.org</strong> alias associated with your account.</p>
+                        <p>This will send a reset email to the <strong>dir-xxx@mainlib.org</strong> alias associated with your account.</p>
                         <div class="form-group">
                             <label><strong>Enter Your Username</strong></label><br>
                             <p style="font-size:small;">Hint: Your username is the abbreviation of your library ('ber').</p>
